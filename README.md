@@ -2,6 +2,19 @@
 
 An original dark phonk composition created by generating FL Studio project events and sampler assets with Python, then rendering the result in FL Studio.
 
+## NIGHT GRAVE V3 — latest revision
+
+144 BPM · D Phrygian · 88 bars. A rounded FM tine replaces the sharp cowbell. The quieter melody leaves room for pitched vocal answers, a fuller harmonic pad, a detuned drone and filtered delays. Six editable native Reeverb 2 inserts provide space.
+
+- [Complete project ZIP](downloads/NIGHT%20GRAVE%20V3%20-%20complete%20project.zip)
+- [FLP](projects/NIGHT%20GRAVE%20V3/NIGHT%20GRAVE%20V3.flp)
+- [MP3](projects/NIGHT%20GRAVE%20V3/NIGHT%20GRAVE%20V3.mp3)
+- [Native render checks](projects/NIGHT%20GRAVE%20V3/validation.json)
+
+16 sampler channels, 24 patterns and 221 clips. Open the ZIP in FL Studio, or keep the FLP beside its WAV samples. Run `python build_dark_phonk_v3.py` to rebuild with the same local packs; `package_v3.py` packages the native render after it is exported to `NIGHT GRAVE V3/FL Render`. The builder writes FL 24 version metadata to match the modern 60-byte playlist format.
+
+The vocal source is a local Phonk pack sample; review its license before commercial distribution. Render validation checks loading, duration and signal levels; the musical result still benefits from listening and personal feedback.
+
 ## NIGHT GRAVE V2
 
 144 BPM · D Phrygian · 88 bars · 2:28 including effect tails.

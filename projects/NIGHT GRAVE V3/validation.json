@@ -1,0 +1,54 @@
+{
+  "fl_studio": "24.2.2.4597",
+  "bpm": 144,
+  "seconds": 148.3637188208617,
+  "peak_dbfs": -5.612075300767079,
+  "rms_dbfs": -17.553946174603404,
+  "effects": [
+    {
+      "insert": 2,
+      "track": "Tape Clap",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.12
+    },
+    {
+      "insert": 6,
+      "track": "Velvet Tine",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.32
+    },
+    {
+      "insert": 7,
+      "track": "Velvet Echo",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.32
+    },
+    {
+      "insert": 10,
+      "track": "Crypt Pad",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.4
+    },
+    {
+      "insert": 15,
+      "track": "Shadow Vocal",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.3
+    },
+    {
+      "insert": 16,
+      "track": "Descent Drone",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.55
+    }
+  ],
+  "clips": 221,
+  "notes": 287,
+  "section_levels": {
+    "intro": -30.14,
+    "drop1": -15.3,
+    "break": -29.97,
+    "drop2": -15.3,
+    "outro": -22.3
+  }
+}
