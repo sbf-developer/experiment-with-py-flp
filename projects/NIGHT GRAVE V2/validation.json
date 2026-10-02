@@ -1,0 +1,36 @@
+{
+  "fl_studio": "24.2.2.4597",
+  "bpm": 144,
+  "seconds": 147.82551020408164,
+  "peak_dbfs": -5.527515934476486,
+  "rms_dbfs": -17.125771212902098,
+  "effects": [
+    {
+      "insert": 2,
+      "track": "Tape Clap",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.12
+    },
+    {
+      "insert": 6,
+      "track": "Cursed Cowbell",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.23
+    },
+    {
+      "insert": 10,
+      "track": "Crypt Pad",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.42
+    }
+  ],
+  "clips": 185,
+  "notes": 293,
+  "section_levels": {
+    "intro": -33.35,
+    "drop1": -14.83,
+    "break": -33.32,
+    "drop2": -14.83,
+    "outro": -21.95
+  }
+}
