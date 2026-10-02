@@ -1,0 +1,35 @@
+{
+  "fl_studio": "24.2.2.4597",
+  "bpm": 144,
+  "seconds": 30.004331065759636,
+  "peak_dbfs": -5.800745241875271,
+  "rms_dbfs": -18.95256605782014,
+  "effects": [
+    {
+      "insert": 2,
+      "track": "Tape Clap",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.08
+    },
+    {
+      "insert": 6,
+      "track": "Velvet Tine",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.18
+    },
+    {
+      "insert": 7,
+      "track": "Velvet Echo",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.24
+    },
+    {
+      "insert": 10,
+      "track": "Crypt Pad",
+      "plugin": "Fruity Reeverb 2",
+      "mix": 0.32
+    }
+  ],
+  "clips": 38,
+  "notes": 189
+}

@@ -2,9 +2,18 @@
 
 An original dark phonk composition created by generating FL Studio project events and sampler assets with Python, then rendering the result in FL Studio.
 
-## NIGHT GRAVE V3 — latest revision
+## Replacement drop study
 
-144 BPM · D Phrygian · 88 bars. A rounded FM tine replaces the sharp cowbell. The quieter melody leaves room for pitched vocal answers, a fuller harmonic pad, a detuned drone and filtered delays. Six editable native Reeverb 2 inserts provide space.
+A 16-bar listening study responding to feedback about disconnected drums, melody and vocals. The kick and bass share syncopated accents; a half-time clap, broken swung hats and a sparse D-F-Eb melodic cell form four related phrases. The pad follows the same D/Eb/D roots. No vocal plays. This is a short alternative to evaluate before writing another full arrangement.
+
+- [Listen](projects/NIGHT%20GRAVE%20-%20DROP%20STUDY/NIGHT%20GRAVE%20-%20DROP%20STUDY.mp3)
+- [Complete FLP and samples](downloads/NIGHT%20GRAVE%20-%20DROP%20STUDY%20-%20complete%20project.zip)
+
+Native FL Studio export: 30 seconds including tails, peak -5.80 dBFS. Technical validation confirms loading and signal levels; it does not establish musical quality. Rebuild with `python build_drop_study.py`, then export natively and run `python package_drop_study.py`.
+
+## NIGHT GRAVE V3 â€” latest revision
+
+144 BPM Â· D Phrygian Â· 88 bars. A rounded FM tine replaces the sharp cowbell. The quieter melody leaves room for pitched vocal answers, a fuller harmonic pad, a detuned drone and filtered delays. Six editable native Reeverb 2 inserts provide space.
 
 - [Complete project ZIP](downloads/NIGHT%20GRAVE%20V3%20-%20complete%20project.zip)
 - [FLP](projects/NIGHT%20GRAVE%20V3/NIGHT%20GRAVE%20V3.flp)
@@ -17,7 +26,7 @@ The vocal source is a local Phonk pack sample; review its license before commerc
 
 ## NIGHT GRAVE V2
 
-144 BPM · D Phrygian · 88 bars · 2:28 including effect tails.
+144 BPM Â· D Phrygian Â· 88 bars Â· 2:28 including effect tails.
 
 - [Download the complete project ZIP](downloads/NIGHT%20GRAVE%20V2%20-%20complete%20project.zip)
 - [FL Studio project](projects/NIGHT%20GRAVE%20V2/NIGHT%20GRAVE%20V2.flp)
@@ -53,4 +62,4 @@ This writes a new `NIGHT GRAVE V2` directory containing the generated FLP and sa
 
 The script includes a compatibility adjustment for PyFLP 2.2.1 on newer Python versions. This is an experimental native-file writer; validate rebuilt projects in FL Studio.
 
-Reference direction: [Kordhell — Murder In My Mind](https://kordhell.bandcamp.com/album/murder-in-my-mind) and [INTERWORLD — METAMORPHOSIS](https://www.youtube.com/watch?v=lJvRohYSrZM). The melody and arrangement are original.
+Reference direction: [Kordhell â€” Murder In My Mind](https://kordhell.bandcamp.com/album/murder-in-my-mind) and [INTERWORLD â€” METAMORPHOSIS](https://www.youtube.com/watch?v=lJvRohYSrZM). The melody and arrangement are original.
