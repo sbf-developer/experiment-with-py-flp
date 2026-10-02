@@ -71,7 +71,7 @@ bass=save('08_Distorted_808_C2',norm(bass,.8),None,'Stable C2 sub; controlled sa
 t=np.arange(4*SR)/SR;f=130.812783
 reese=np.stack([np.sin(2*np.pi*f*.996*t)+.25*np.sin(2*np.pi*2*f*t),np.sin(2*np.pi*f*1.004*t)+.25*np.sin(2*np.pi*2*f*t)],axis=1)
 reese=filt(np.tanh(reese*2),850);reese=filt(reese,150,'highpass')
-reese=save('09_Shadow_Reese_C3',norm(reese,.55),None,'Detuned stable C3 oscillators; 150–850 Hz; smooth onset')
+reese=save('09_Shadow_Reese_C3',norm(reese,.55),None,'Detuned stable C3 oscillators; 150Ã¢â‚¬â€œ850 Hz; smooth onset')
 t=np.arange(7*SR)/SR;f=261.625565
 pad=np.stack([sum(np.sin(2*np.pi*f*.998*h*t)/(h**1.6) for h in [1,2,3,4,5,7]),sum(np.sin(2*np.pi*f*1.002*h*t)/(h**1.6) for h in [1,2,3,4,5,7])],axis=1)
 pad*=((1-np.exp(-t/.3))*np.exp(-t/7))[:,None];pad=filt(filt(pad,190,'highpass'),2100)
@@ -97,7 +97,7 @@ voxel=np.zeros((len(phrase)+int(.84*SR),2),np.float32)
 voxel[:len(phrase)]+=phrase
 for delay,gain in [(.416667,.22),(.833333,.10)]:
     offset=int(delay*SR);voxel[offset:offset+len(phrase)]+=phrase[:,::-1]*gain
-vocal=save('15_Shadow_Vocal',norm(voxel,.6),vocal_source,'Active 800 ms phrase; pitch -5 semitones; radio band 180–2800 Hz; quarter-note echo')
+vocal=save('15_Shadow_Vocal',norm(voxel,.6),vocal_source,'Active 800 ms phrase; pitch -5 semitones; radio band 180Ã¢â‚¬â€œ2800 Hz; quarter-note echo')
 t=np.arange(int((16*60/BPM)*SR))/SR;f=130.812783
 scape=np.stack([sum(np.sin(2*np.pi*f*.997*h*t+.2*np.sin(t*.7))/(h**1.8) for h in [1,2,3,5]),sum(np.sin(2*np.pi*f*1.003*h*t+.2*np.sin(t*.6))/(h**1.8) for h in [1,2,3,5])],axis=1)
 scape*=((1-np.exp(-t/.8))*(.7+.3*np.sin(t*.38)**2))[:,None]
@@ -249,7 +249,7 @@ for ch in range(len(names)):
 playlist=b''
 for clip_index,(pid,bar,ch) in enumerate(sorted(placements,key=lambda x:(x[1],x[2]))):
     p=patterns[pid-1]
-    playlist+=struct.pack('<IHHIHH2sH4sff',bar*BAR,20480,20480+pid,p['bars']*BAR,499-ch,0,b'\x78\x00',64,b'\x40\x64\x80\x80',float('nan'),float('nan'))+struct.pack('<I16sfI',64+clip_index,bytes(16),1.,0)
+    playlist+=struct.pack('<IHHIHH2sH4sff',bar*BAR,20480,20480+pid,p['bars']*BAR,499-ch,0,b'\x78\x00',64,b'\x40\x64\x80\x80',struct.unpack('<f',b'\xff'*4)[0],struct.unpack('<f',b'\xff'*4)[0])+struct.pack('<I16sfI',64+clip_index,bytes(16),1.,0)
 suffix=[];track=0
 for eid,d in events[arrstart:]:
     if eid==241:d=txt('NIGHT GRAVE / FULL SONG')
@@ -300,5 +300,3 @@ assert sum(len(list(p.notes)) for p in parsed.patterns)==sum(len(p['notes']) for
 assert all(c.sample_path.exists() for c in parsed.channels)
 json.dump(dict(title='NIGHT GRAVE',bpm=BPM,key='D phrygian',bars=88,duration_seconds=88*SECONDS_BAR,sections=sections,samples=ledger,patterns=patterns,placements=placements),open(OUT/'production.json','w'),indent=2)
 print(json.dumps(dict(flp=str(flp),channels=len(names),patterns=len(patterns),clips=len(placements),notes=sum(len(p['notes']) for p in patterns),duration=88*SECONDS_BAR)))
-
-
